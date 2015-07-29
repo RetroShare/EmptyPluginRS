@@ -2,6 +2,11 @@
 
 CONFIG += qt uic qrc resources
 
+greaterThan(QT_MAJOR_VERSION, 4) {
+	# Qt 5
+	QT     += widgets
+} 
+
 SOURCES = EmptyPluginPlugin.cpp \
     topjcdialog.cpp
 HEADERS = EmptyPluginPlugin.h \
